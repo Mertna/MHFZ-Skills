@@ -1,2 +1,3 @@
 # MHFZ-Skills.github.io
-Skills searcher for MHFZ
+hmmmmmmm skils
+Easy skills searcher for MHFZ
