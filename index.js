@@ -20,6 +20,7 @@
 	function direct(table){
 		table = table.toUpperCase();  let guide = true;
 			 if (table.includes("PRIO")){ table="Priority"; guide = false; }
+		else if (table.includes("SIGIL")){ table="Sigil"; guide = false; }
 		else if (table.includes("ROAD")){ table="Road"; guide = false; }
 		else if (table.includes("CUIS") || table.includes("GUILD")){ table="Cuisine"; guide = false; }
 		else if (table.includes("POKE")){ table="Lance"; }
@@ -84,12 +85,16 @@
 		if (description == true) {
 			document.getElementById('right').contentWindow.document.querySelectorAll(".intro").forEach((i) => { i.style.width = ""; });
 			document.getElementById('right').contentWindow.document.querySelectorAll(".f").forEach((f) => { f.classList.replace('f', 'e'); });
-			document.getElementById('right').contentWindow.document.querySelectorAll(".b").forEach((b) => { b.style.display = ""; }); return;
+			document.getElementById('right').contentWindow.document.querySelectorAll(".b").forEach((b) => { b.style.display = ""; });
+			document.getElementById('right').contentWindow.document.querySelectorAll(".bsi").forEach((bsi) => { bsi.style.display = ""; });
+			document.getElementById('right').contentWindow.document.querySelectorAll(".msi").forEach((msi) => { msi.classList.replace('msi', 'nsi');}); return;
 		}
 		if (description == false){
 			document.getElementById('right').contentWindow.document.querySelectorAll(".intro").forEach((i) => { i.style.width = "15%"; });
 			document.getElementById('right').contentWindow.document.querySelectorAll(".e").forEach((e) => { e.classList.replace('e', 'f');});
-			document.getElementById('right').contentWindow.document.querySelectorAll(".b").forEach((b) => { b.style.display = "none"; }); return;
+			document.getElementById('right').contentWindow.document.querySelectorAll(".b").forEach((b) => { b.style.display = "none"; });
+			document.getElementById('right').contentWindow.document.querySelectorAll(".bsi").forEach((bsi) => { bsi.style.display = "none"; });
+			document.getElementById('right').contentWindow.document.querySelectorAll(".nsi").forEach((nsi) => { nsi.classList.replace('nsi', 'msi');}); return;
 		}
 	};
 	
