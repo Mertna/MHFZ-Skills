@@ -3,7 +3,10 @@
 
 <link  href="./menu.css" rel="stylesheet">
 
-</head><body>
+<link rel="stylesheet" href="../../libs/nobar/dist/simplebar.min.css">
+<script src="../../libs/nobar/dist/simplebar.js"></script>
+
+</head><body class="scroller">
 
 <table id="menu" style="width: 100%;" cellspacing="0" cellpadding="1" border="1">
 
@@ -81,4 +84,5 @@
 </table>
 
 </body>
+<script> document.querySelectorAll('.scroller').forEach( e => new SimpleBar(e, { autoHide: false })) </script>
 </html>

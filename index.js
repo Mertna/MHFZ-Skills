@@ -100,5 +100,5 @@
 	
 	function menu() {
 		document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 1;
-		document.getElementById('right').src="";
+		document.getElementById('right').src="./tables/default/Default.html";
 	}	
