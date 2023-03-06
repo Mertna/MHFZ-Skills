@@ -21,8 +21,10 @@
 		table = table.toUpperCase();  let guide = true;
 			 if (table.includes("PRIO")){ table="Priority"; guide = false; }
 		else if (table.includes("SIGIL")){ table="Sigil"; guide = false; }
-		else if (table.includes("ROAD")){ table="Road"; guide = false; }
 		else if (table.includes("CUIS") || table.includes("GUILD")){ table="Cuisine"; guide = false; }
+		else if (table.includes("CARAV")){ table="Caravan"; guide = false; }
+		else if (table.includes("ACTIV") || table.includes("FEAT")){ table="Feature"; guide = false; }
+		else if (table.includes("ROAD")){ table="Road"; guide = false; }
 		else if (table.includes("POKE")){ table="Lance"; }
 		else if (table.includes("BONK")){ table="Hammer"; }
 		else if (table.includes("DOOT") || table.includes("HORN")){ table="HH"; }
@@ -83,17 +85,21 @@
 	
 	function switchDesc() {
 		if (description == true) {
+			document.getElementById('right').contentWindow.document.querySelectorAll("#menu1, #menu2, .rem, .b, .bsi, .bch, .nca, .tca, .caf, .nhr").forEach((m) => { m.style.display = ""; });
 			document.getElementById('right').contentWindow.document.querySelectorAll(".intro").forEach((i) => { i.style.width = ""; });
 			document.getElementById('right').contentWindow.document.querySelectorAll(".f").forEach((f) => { f.classList.replace('f', 'e'); });
-			document.getElementById('right').contentWindow.document.querySelectorAll(".b").forEach((b) => { b.style.display = ""; });
-			document.getElementById('right').contentWindow.document.querySelectorAll(".bsi").forEach((bsi) => { bsi.style.display = ""; });
+			document.getElementById('right').contentWindow.document.querySelectorAll(".ich").forEach((ich) => { ich.classList.replace('ich', 'jch');});
+			document.getElementById('right').contentWindow.document.querySelectorAll(".cca").forEach((cca) => { cca.classList.replace('cca', 'bca');});
+			document.getElementById('right').contentWindow.document.querySelectorAll(".daf").forEach((daf) => { daf.classList.replace('daf', 'baf');});
 			document.getElementById('right').contentWindow.document.querySelectorAll(".msi").forEach((msi) => { msi.classList.replace('msi', 'nsi');}); return;
 		}
 		if (description == false){
+			document.getElementById('right').contentWindow.document.querySelectorAll("#menu1, #menu2, .rem, .b, .bsi, .bch, .nca, .tca, .caf, .nhr").forEach((m) => { m.style.display = "none"; });
 			document.getElementById('right').contentWindow.document.querySelectorAll(".intro").forEach((i) => { i.style.width = "15%"; });
 			document.getElementById('right').contentWindow.document.querySelectorAll(".e").forEach((e) => { e.classList.replace('e', 'f');});
-			document.getElementById('right').contentWindow.document.querySelectorAll(".b").forEach((b) => { b.style.display = "none"; });
-			document.getElementById('right').contentWindow.document.querySelectorAll(".bsi").forEach((bsi) => { bsi.style.display = "none"; });
+			document.getElementById('right').contentWindow.document.querySelectorAll(".jch").forEach((jch) => { jch.classList.replace('jch', 'ich');});
+			document.getElementById('right').contentWindow.document.querySelectorAll(".bca").forEach((bca) => { bca.classList.replace('bca', 'cca');});
+			document.getElementById('right').contentWindow.document.querySelectorAll(".baf").forEach((baf) => { baf.classList.replace('baf', 'daf');});
 			document.getElementById('right').contentWindow.document.querySelectorAll(".nsi").forEach((nsi) => { nsi.classList.replace('nsi', 'msi');}); return;
 		}
 	};

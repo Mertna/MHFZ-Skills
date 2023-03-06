@@ -16,18 +16,16 @@
 	 td.s	{background-color:rgb(85,85,115); width:10%;}
 	 td.n	{background-color:rgb(88,88,110); text-align:right; padding-right:10px;}
 	 
-	   .phr	{background-color:rgb(80,90,130); margin: 10px 0 10px 0; display:block; margin-left:auto; margin-right:auto; width:50%; border:7px solid; border-color:rgb(143, 129, 193);}
-	 td.chr	{background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:7%;}
-	 td.ghr {background-color:rgb(80,90,130); padding: 0 5px 0 5px;}
-	 td.thr	{background-color:rgba(85,85,115,0.95); height:10%; width:3%; text-align:center;}
-	 td.nhr	{background-color:rgba(85,85,115,0.95); height:10%; width:5%; text-align:center;}
-	 td.bhr	{background-color:rgba(90, 90, 110, 0.95);}
-	 
 	 td.gsi {background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:15%;}
 	 td.jsi {background-color:rgba(85,85,115,0.95); padding: 0 5px 0 5px; width:15%;}
 	 td.nsi	{background-color:rgb(88,88,110); height:10%; width:6%; text-align:center;}
 	 td.msi	{background-color:rgb(88,88,110); height:10%; width:70%; text-align:center;}
 	 td.bsi	{background-color:rgba(90, 90, 110, 0.95);}
+	 
+	 td.gch {background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:10%;}
+	 td.jch {background-color:rgba(85,85,115,0.95); padding: 0 5px 0 5px; width:10%; text-align:center;}
+	 td.ich {background-color:rgba(85,85,115,0.95); padding: 0 5px 0 5px; width:90%; text-align:center;}
+	 td.bch	{background-color:rgba(90, 90, 110, 0.95); width:80%;}
 	  
 	 td.bgf	{background-color:rgba(90, 90, 110, 0.95); width:10%;}
 	 td.ggf	{background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:10%;}
@@ -38,7 +36,28 @@
 	.gfb {color:#00c8ff;}
 	.gfp {color:#ec80ff;}
 	.gfo {text-decoration:line-through;}
-	
+
+	 td.gca {background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:15%;}
+	 td.jca {background-color:rgb(136, 119, 159);padding: 0 5px 0 5px; width:15%;}
+	 td.bca	{background-color:rgba(90, 90, 110, 0.95);}
+	 td.cca {background-color:rgba(90, 90, 110, 0.95); width:85%;}
+	 td.tca	{background-color:rgba(85,85,115,0.95); height:10%; width:5%; text-align:center;}
+	 td.nca	{background-color:rgba(85,85,115,0.95); height:10%; width:10%; text-align:center;}
+	 .fca	{background-color:rgb(136, 119, 159);  border:1px solid; border-color:white;}
+		 
+	.paf	{background-color:rgb(80,90,130); margin: 10px 0 10px 0; display:block; margin-left:auto; margin-right:auto; width:50%; border:3px solid; border-color:rgb(143, 129, 193);}
+	 td.caf	{background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:7%;}
+	 td.gaf {background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:15%;}
+	 td.baf	{background-color:rgba(90, 90, 110, 0.95); width:78%;}
+	 td.daf	{background-color:rgba(90, 90, 110, 0.95); width:85%;}
+
+	.phr	{background-color:rgb(80,90,130); margin: 10px 0 10px 0; display:block; margin-left:auto; margin-right:auto; width:50%; border:7px solid; border-color:rgb(143, 129, 193);}
+	 td.chr	{background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:7%;}
+	 td.ghr {background-color:rgb(80,90,130); padding: 0 5px 0 5px;}
+	 td.thr	{background-color:rgba(85,85,115,0.95); height:10%; width:3%; text-align:center;}
+	 td.nhr	{background-color:rgba(85,85,115,0.95); height:10%; width:5%; text-align:center;}
+	 td.bhr	{background-color:rgba(90, 90, 110, 0.95);}
+	 	
 	.in     {background-color:rgba(150,150,180, 0.5); margin-bottom:3px; margin-top:3px; margin-right:5px;}
 	.in th	{background-color:rgba(120,120,150,0.95);}
 	.in td  {background-color: rgba(90,90,110,0.95); padding-left:5px; padding-right: 5px;}
