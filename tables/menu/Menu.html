@@ -16,7 +16,7 @@
 	
 	<tbody>
 	
-	<tr style=""><th colspan="1" class="title" style="height:10%; border:1px solid;">-Tools-</th>	</tr>			
+	<tr style=""><th colspan="1" class="title" style="height:10%; border:1px solid;">-Skills Source-</th>	</tr>
 <!-- All Skills -->				
 		<tr class="sep" style=""></tr>
 		<tr class="l" style="height:6vh"><td class="s"><button class="but" onclick="parent.show('Base', false)">Base Skills</button></td></tr>
@@ -27,7 +27,8 @@
 		<tr class="l" style="height:5px"><td class="g" rowspan="1" style="width:20%; background-color:rgb(120,120,210);"></td></tr>
 		<tr class="sep" style=""></tr>
 		<tr class="l" style="height:6vh"><td class="s">
-			<select onfocus='this.size=10;' onblur='this.size=0;' required="" id="classList" class="but" style="width:98%" onchange="this.size=1; this.blur(); parent.selectClass()">
+			<select onfocus='this.size=10;' onblur='this.size=0;' required="" id="classList" class="sel" onchange="this.size=1; this.blur(); parent.selectTable('classList')">
+				<option style="font-size: 0.2pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
 				<option value="SnS">SnS skills</option>
 				<option value="All" disabled="" selected="" style="display:none">Go-to skills</option>
 																<option style="font-size: 1pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
@@ -47,10 +48,9 @@
 				<option value="HBG">HBG skills</option>			<option style="font-size: 1pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
 				<option value="Bow">Bow skills</option>			<option style="font-size: 1pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
 					<option style="font-size: 1pt; background-color:rgb(100,100,140);" disabled="">&nbsp;</option><option style="font-size: 1pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
-				<option value="Support">SnS/LBG support</option>
-			</select></td></tr>
-				
-
+				<option value="Support">SnS/LBG support</option><option style="font-size: 0.2pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
+			</select>
+		</td></tr>
 <!-- Sigil Skills -->		
 		<tr class="sep" style=""></tr>
 		<tr class="l" style="height:5px"><td class="g" rowspan="1" style="width:20%; background-color:rgb(120,120,210);"></td></tr>	
@@ -71,20 +71,30 @@
 		<tr class="l" style="height:5px"><td class="g" rowspan="1" style="width:20%; background-color:rgb(120,120,210);"></td></tr>	
 		<tr class="sep" style=""></tr>
 		<tr class="l" style="height:6vh"><td class="s"><button class="but" onclick="parent.show('Feature', false)">Active Feature</button></td></tr>
-<!-- Road Skills -->		
+	
+	<!-- <tr class="sep" style=""></tr> -->
+	<!-- <tr style=""><th colspan="1" class="title" style="height:10%; border:1px solid;">-Passive Skills-</th>	</tr> -->
+	
+	<!-- Road Skills -->		
 		<tr class="sep" style=""></tr>
 		<tr class="l" style="height:5px"><td class="g" rowspan="1" style="width:20%; background-color:rgb(120,120,210);"></td></tr>	
 		<tr class="sep" style=""></tr>
 		<tr class="l" style="height:6vh"><td class="s"><button class="but" onclick="parent.show('Road', false)">Road Skills</button></td></tr>
-<!-- Exotic Skills -->		
+<!-- Pet Skills -->				
 		<tr class="sep" style=""></tr>
-		<tr class="l" style="height:5px"><td class="g" rowspan="1" style="width:20%; background-color:rgb(120,120,210);"></td></tr>	
+		<tr class="l" style="height:5px"><td class="g" rowspan="1" style="width:20%; background-color:rgb(120,120,210);"></td></tr>
 		<tr class="sep" style=""></tr>
-		<tr class="l" style="height:6vh"><td class="s"><button class="but" onclick="parent.show('WIP', false)">Exotic Skills</button></td></tr>
-<!-- Supremacy Skills -->		
-		<tr class="l" style="height:6vh"><td class="s"><button class="but" onclick="parent.show('WIP', false)">Supremacy Skills</button></td></tr>
+		<tr class="l" style="height:6vh"><td class="s">
+			<select onfocus='this.size=4;' onblur='this.size=0;' required="" id="petList" class="sel" onchange="this.size=1; this.blur(); parent.selectTable('petList')">
+				<option style="font-size: 0.2pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
+				<option value="Poogie">Guild Poogie</option>
+				<option value="All" disabled="" selected="" style="display:none">Pet skills</option>
+				<option style="font-size: 1pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
+				<option value="Halk">Support Halk</option><option style="font-size: 0.2pt; background-color:rgb(60,60,80);" disabled="">&nbsp;</option>
+			</select>
+		</td></tr>
 		<tr class="sep" style=""></tr>
-		<tr class="l" style="height:5px"><td class="g" rowspan="1" style="width:20%; background-color:rgb(120,120,210);"></td></tr>	
+		<tr class="l" style="height:5px"><td class="g" rowspan="1" style="width:20%; background-color:rgb(120,120,210);"></td></tr>
 	</tbody>
 </table>
 

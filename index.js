@@ -25,6 +25,9 @@
 		else if (table.includes("CARAV")){ table="Caravan"; guide = false; }
 		else if (table.includes("ACTIV") || table.includes("FEAT")){ table="Feature"; guide = false; }
 		else if (table.includes("ROAD")){ table="Road"; guide = false; }
+		else if (table.includes("POOG")){ table="Poogie"; guide = false; }
+		else if (table.includes("HALK")){ table="Halk"; guide = false; }
+		
 		else if (table.includes("POKE")){ table="Lance"; }
 		else if (table.includes("BONK")){ table="Hammer"; }
 		else if (table.includes("DOOT") || table.includes("HORN")){ table="HH"; }
@@ -58,14 +61,16 @@
 		document.querySelectorAll("tr").forEach((tr) => { tr.style.display = ""; });
 		if(guide == true)		{ document.getElementById('right').src = "./tables/weapons/" + x + ".html"; }
 		else if (guide == false){ document.getElementById('right').src = "./tables/" + x + ".html";
-								  document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 1; };
+								  document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 2;	};
+		if (x != 'Poogie' && x!= 'Halk'){ document.getElementById('left').contentWindow.document.getElementById("petList").selectedIndex = 2; };
 	};
 	
-	function selectClass() {
+	function selectTable(selectorID) {
 		let frame = document.getElementById('left');
-		let selectBox = frame.contentWindow.document.getElementById("classList");
-		var selectedClass = selectBox.options[selectBox.selectedIndex].value;
-		show(selectedClass, true);
+		let selectBox = frame.contentWindow.document.getElementById(selectorID);
+		var selectedTable = selectBox.options[selectBox.selectedIndex].value;
+		if(selectorID == 'classList'){ show(selectedTable, true); };
+		if(selectorID == 'petList'){ show(selectedTable, false); };
 	};
 	
 	function searchSkills(input) {

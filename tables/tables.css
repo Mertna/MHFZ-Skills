@@ -57,6 +57,19 @@
 	 td.thr	{background-color:rgba(85,85,115,0.95); height:10%; width:3%; text-align:center;}
 	 td.nhr	{background-color:rgba(85,85,115,0.95); height:10%; width:5%; text-align:center;}
 	 td.bhr	{background-color:rgba(90, 90, 110, 0.95);}
+	 
+	.ppo	{background-color:rgb(80,90,130); margin: 10px 0 10px 0; display:block; margin-left:auto; margin-right:auto; width:70%; border:4px solid; border-color:rgb(143, 129, 193);}
+	 td.cpo	{background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:15%;}
+	 td.gpo {background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:13%;}
+	 td.tpo	{background-color:rgba(85,85,115,0.95); height:10%; text-align:center; width:12%;}
+	 td.bpo	{background-color:rgba(90, 90, 110, 0.95); font-size:120%; width:60%;}
+	 td.ipo {background-color:rgba(90, 90, 110, 0.95);}
+	 .gop	{text-decoration:underline; font-size:120%;}
+	 .ipo>.inx td {background-color:rgba(85,85,115,0.95);}
+	 
+	 td.gha {background-color:rgb(80,90,130); padding: 0 10px 0 10px; width:15%;}
+	 td.nha	{background-color:rgba(85,85,115,0.95); text-align:center; width:10%; }
+	 td.bha	{background-color:rgba(90, 90, 110, 0.95); width:75%;}
 	 	
 	.in     {background-color:rgba(150,150,180, 0.5); margin-bottom:3px; margin-top:3px; margin-right:5px;}
 	.in th	{background-color:rgba(120,120,150,0.95);}
