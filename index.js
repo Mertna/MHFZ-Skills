@@ -75,7 +75,8 @@
 	
 	function searchSkills(input) {
 		search = input;
-		document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 1;
+		document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 2;
+		document.getElementById('left').contentWindow.document.getElementById("petList").selectedIndex = 2;
 		document.getElementById('right').src="./tables/All.html";
 	};
 	
