@@ -14,7 +14,7 @@
 	<tbody id="skills_all">
 	
 		<tr><td colspan="2" rowspan="1" class="intro" style="background-color:rgb(120,120,210); border:none;"></td><td colspan="4" style="background-color:rgb(120,120,210); border:none;"></td> </tr>
-		<tr><th colspan="5" class="title" style="border-top:none;">-Zenith Skills-</th></tr>			
+		<tr onclick="parent.toggleTitle(this);"><th colspan="5" class="title" style="border-top:none;">-Zenith Skills-</th></tr>			
 <!-- Skill Slot Up -->		
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="7">Skill Slot Up</td><td class="g" rowspan="7"></td>
@@ -138,7 +138,7 @@
 		
 		
 		<tr class="sep"></tr>
-	<tr><th colspan="5" class="title">-Base Skills-</th>	</tr>
+	<tr onclick="parent.toggleTitle(this);"><th colspan="5" class="title">-Base Skills-</th>	</tr>
 <!-- Health -->				
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="8">Health</td><td class="g" rowspan="8">○</td><td class="t">Health+50</td><td class="n">40</td><td style="" class="b">Maximum Health +50</td></tr>
@@ -192,12 +192,6 @@
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g" rowspan="2">Gluttony</td><td class="g" rowspan="2">×</td><td class="t">Scavenger</td><td class="n">15</td><td style="" class="b">Using consumables restores 25 maximum stamina.</td></tr>
 		<tr style=""><td class="t">Gourmand</td><td class="n">10</td><td style="" class="b">Stamina recovery when eating meat is increased by 25.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Attack Skills-</th></tr> -->
-		
-		
 <!-- Strong Attack -->				
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="6">Strong Attack</td><td class="g" rowspan="6">×</td><td class="t">Strong Attack+6</td><td class="n">50</td><td style="" class="b">Increases True Attack by 200.</td></tr>
@@ -364,12 +358,6 @@
 <!-- Determination -->				
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g">Determination</td><td class="g">×</td><td class="t">Solid Determination</td><td class="n">10</td><td style="" class="b">Blesses the hunter with great benefits.<br>※ True Attack+100, Affinity +100%, Critical Multiplier +0.25x, Adrenaline+2<br>※ Exploit Weakness and Elemental Exploiter without any hitbox requirements<br>※ BM: Sharpness+1 | GN: +5 to raw hitbox values within Critical Distance<br>However completely disables many skills.<br>※ Attack, Expert, Issen, Exploit Weakness, Dissolver, Precision, Critical Shot, Absolute Defense, Soul Revival<br>※ Strong attack +1, +2, +3 and +4. Stacks with Strong Attack+5 and +6.<br>※ Any form of Guts (Guts, Great Guts, True Guts, Guts Ticket, Mega Guts Ticket)</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Defensive Skills-</th></tr> -->
-		
-		
 <!-- Vitality -->				
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="4">Vitality</td><td class="g" rowspan="4">×</td><td class="t">Vitality+3</td><td class="n">30</td><td style="" class="b">Defense+90, Damage Recovery Speed+2, Recovery Items Up,<br>100% Combination success rate for Potions, Mega Potions and Max Potions.</td></tr>
@@ -405,12 +393,6 @@
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g" rowspan="2">Fortification</td><td class="g" rowspan="2">×</td><td class="t">Fortification+2</td><td class="n">15</td><td style="" class="b">Hybrid skill containing Guard+2, Peerless and Weapon Handling.</td></tr>
 		<tr style=""><td class="t">Fortification+1</td><td class="n">10</td><td style="" class="b">Hybrid skill containing Guard+1, Marathon Runner and Weapon Handling.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Blademaster Skills-</th></tr> -->
-		
-		
 <!-- Sharpening -->				
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="3">Sharpening</td><td class="g" rowspan="3">○</td><td class="t">Sharpening Artisan</td><td class="n">20</td><td style="" class="b">Sharpen at 4x original speed, gain 30 seconds of infinite sharpness and Sharpness+1 after sharpening.</td></tr>
@@ -486,12 +468,6 @@
 		<tr class="l" style=""><td class="g" rowspan="3">Sword God</td><td class="g" rowspan="3">×</td><td class="t">Sword God+3</td><td class="n">25</td><td style="" class="b">Sharpness+1, Razor Sharp+2, Fencing+2 and Sharpening Artisan in one skill.</td></tr>
 		<tr style=""><td class="t">Sword God+2</td><td class="n">20</td><td style="" class="b">Sharpness+1, Razor Sharp+2, Fencing+2 in one skill.</td></tr>
 		<tr style=""><td class="t">Sword God+1</td><td class="n">10</td><td style="" class="b">Sharpness+1, Razor Sharp+1, Fencing+1 in one skill.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Gunner Skills-</th></tr> -->
-		
-	
 <!-- Steady Hand -->				
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="2">Steady Hand</td><td class="g" rowspan="2">×</td><td class="t">Steady Hand+2</td><td class="n">20</td><td style="" class="b">Normal/Rapid Up, Pierce/Pierce Up, Pellet/Spread Up and +5 to weakness value with critical distance.<br>Does not stack with the individual up skills, determination, precision, sniper or critical shot.</td></tr>
@@ -591,12 +567,6 @@
 <!-- Spacing -->					
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g">Spacing</td><td class="g">×</td><td class="t">Spacing</td><td class="n">10</td><td style="" class="b">Alters critical distance for Normal,Pierce,Pellet and Blunt shots to be lower and further increases damage at critical distance.<br>If you consistently attack within this critical distance you gain Movement Speed+2 and Evade Distance Up.<br>LBG and HBG get increased perfect shot (3 Segments) and compression windows (2 segments). Bow gets lowered charge times that stack with Auto-Reload.<br>Does not buff attacks without Critical Distance, is added to the buff for the first half of HBG's Critical Distance.<br>Buff builds an internal meter that fills in much the same way as Thunder Clad and total hits needed will vary with Attack, Affinity, Shot Type, etc. but meter build up is not reset on being launched etc.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Resistance Skills-</th></tr> -->
-		
-		
 <!-- All Res Up -->					
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="6">All Res Up</td><td class="g" rowspan="6">×</td><td class="t">All Res+20</td><td class="n">20</td><td style="" class="b">All resistance values increase by 20.</td></tr>
@@ -645,12 +615,6 @@
 		<tr style=""><td class="t">Dragon Res-10</td><td class="n">-10</td><td style="" class="b">Dragon res values decrease by 10.</td></tr>
 		<tr style=""><td class="t">Dragon Res-20</td><td class="n">-15</td><td style="" class="b">Dragon res values decrease by 20.</td></tr>
 		<tr style=""><td class="t">Dragon Res-30</td><td class="n">-20</td><td style="" class="b">Dragon res values decrease by 30.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Abnormal Status Skills-</th></tr> -->
-		
-		
 <!-- Poison -->				
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="3">Poison</td><td class="g" rowspan="3">○</td><td class="t">Negate Poison</td><td class="n">20</td><td style="" class="b">Immunity to Poison.</td></tr>
@@ -708,12 +672,6 @@
 <!-- Freeze Res -->					
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g">Freeze Res</td><td class="g">×</td><td class="t">Freeze Resistance</td><td class="n">10</td><td style="" class="b">Grants immunity to Freezing (Toa Tesukatora).</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Other Protection Skills-</th></tr> -->
-		
-		
 <!-- Three Worlds -->					
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="3">Three Worlds</td><td class="g" rowspan="3">×</td><td class="t">Unaffected+3</td><td class="n">20</td><td style="" class="b">Super High-Grade Earplugs, Violent Wind Breaker and Quake Res+2.</td></tr>
@@ -794,12 +752,6 @@
 <!-- Absolute Defense -->					
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g">Absolute Defense</td><td class="g">×</td><td class="t">Absolute Defense</td><td class="n">20</td><td style="" class="b">Adds a shield aura that completely negates hits, including all damage and status effects that the hit would cause.<br>Shield vanishes for a set duration after each hit blocked, with the duration before recharging taking longer with each hit taken.<br>Reduces physical damage to around 0.8x while the shield is down</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Item/Combo Skills-</th></tr> -->
-		
-			
 <!-- Combo Expert -->					
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="4">Combo Expert</td><td class="g" rowspan="4">×</td><td class="t">Combo Expert+3</td><td class="n">20</td><td style="" class="b">Combo Rate +30% and the effects of Bullet Combination Expert and Health Recovery Items Improved.</td></tr>
@@ -871,12 +823,6 @@
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g" rowspan="2">Knife Throwing</td><td class="g" rowspan="2">○</td><td class="t">Throwing Knives+2</td><td class="n">20</td><td style="" class="b">Throw 5 Knives at once instead of 1. Only consumes 1.</td></tr>
 		<tr style=""><td class="t">Throwing Knives+1</td><td class="n">10</td><td style="" class="b">Throw 3 Knives at once instead of 1. Only consumes 1.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Map/Detection Skills-</th></tr> -->
-		
-		
 <!-- Map -->					
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g">Map</td><td class="g">×</td><td class="t">Map</td><td class="n">10</td><td style="" class="b">Always display the map.</td></tr>
@@ -891,12 +837,6 @@
 <!-- Incitement -->					
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g">Incitement</td><td class="g">×</td><td class="t">Incitement</td><td class="n">10</td><td style="" class="b">Attacking a monster will force its attention towards you rather than your fellow Hunters. Damage received from the monster will also be reduced during this time. The yellow eye icon indicating you were spotted will turn Red when the skill is in effect.<br>Going outside of the monster's range for too long will undo the effect prematurely, the skill has a 30 second cooldown before it can be activated again.<br>While being targeted you gain +40 True Raw.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Gathering/Transport Skills-</th></tr> -->
-		
-		
 <!-- Backpacking -->					
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g">Backpacking</td><td class="g">×</td><td class="t">Pro Transporter</td><td class="n">10</td><td style="" class="b">Increases speed when carrying heavy items such as eggs, powderstone, soothstone, etc.<br>Also be able to fall slightly higher altitudes without dropping the item.</td></tr>
@@ -918,12 +858,6 @@
 		<tr class="l" style=""><td class="g" rowspan="3">Mindfulness</td><td class="g" rowspan="3">○</td><td class="t">Imperturbable</td><td class="n">15</td><td style="" class="b">While using an item or gathering, the Hunter can't be interrupted by any attack.</td></tr>
 		<tr style=""><td class="t">Fully Prepared</td><td class="n">10</td><td style="" class="b">While using an item or gathering, the Hunter can't be interrupted by other hunters or small monsters.</td></tr>
 		<tr style=""><td class="t">Negligence</td><td class="n">-10</td><td style="" class="b">Damage taken from monsters is increased when taking a hit while using an item or gathering.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Reward Skills-</th></tr> -->
-		
-		
 <!-- Fate -->					
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="5">Fate</td><td class="g" rowspan="5">○</td><td class="n" colspan="2"><br></td><td colspan="3" style="" class="b">Usually, the probability of increasing the number of slots is 22/32.</td></tr>
@@ -938,12 +872,6 @@
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g" rowspan="2">Pressure</td><td class="g" rowspan="2">○</td><td class="t">Pressure (Large)</td><td class="n">20</td><td style="" class="b">Monster Bounty randomly increases by 30, 50, 75, 100 or 150%.</td></tr>
 		<tr style=""><td class="t">Pressure (Small)</td><td class="n">10</td><td style="" class="b">Monster Bounty increases by 30%.</td></tr>
-		
-		
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Other Skills-</th></tr> -->
-		
-		
 <!-- Breeder -->					
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g">Breeder</td><td class="g">×</td><td class="t">Breeder</td><td class="n">10</td><td style="" class="b">Poogie item drops atthe Pugi Farm become more common. Halks also drop items more often.</td></tr>
@@ -999,12 +927,6 @@
 <!-- Ice Age -->					
 		<tr class="sep" style=""></tr>
 		<tr class="l" style=""><td class="g">Ice Age</td><td class="g">×</td><td class="t">Ice Age</td><td class="n">10</td><td style="" class="b">Upon attacking a monster the hunter is surrounded by an icy aura. This aura deals damage to all monsters in its area and grants a number of different skills.This aura has three stages and will progress with more hits.<br>The aura also grants Stamina Recovery Up and Sharp Sword to all hunters affected by the aura and the one with the skill also gets Winter General.<br>Damage is dealt once every second fixed rather than over time.</td></tr>
-	
-	
-		<!-- <tr class="sep" style=""></tr> -->
-		<!-- <tr></tr><tr><th colspan="5" class="title">-Hiden/Tech Skills-</th></tr>	 -->
-					
-				
 <!-- SnS Tech -->					
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="g" rowspan="5">SnS Tech</td><td class="g" rowspan="5">×</td><td class="t">SnS Tech (Master)</td><td class="n">Both Hiden</td><td style="" class="b">Sharpness level +1 is added to SnS Tech [Sword Saint].</td></tr>
@@ -1115,7 +1037,7 @@
 	
 	<tbody>
 	
-	<tr><th colspan="4" class="title">-Sigil Skills-</th></tr>
+	<tr onclick="parent.toggleTitle(this);"><th colspan="4" class="title">-Sigil Skills-</th></tr>
 	
 <!-- Attack  -->				
 		<tr class="sep" style=""></tr>
@@ -1532,7 +1454,7 @@
 	
 	<tbody>
 	
-	<tr style=""><th colspan="9" class="title">-Guild Food-</th></tr>		
+	<tr onclick="parent.toggleTitle(this);" style=""><th colspan="9" class="title">-Guild Food-</th></tr>		
 	<tr class="sep" style=""></tr>
 		<tr style=""><td class="c">Great Success</td><td class="c">Success</td><td class="c">Failure</td><td class="c">Great Failure</td><td class="c">Base Ingredient</td><td class="c" colspan="3">Auxiliary</td><td class="c">Dish Name</td></tr>
 	<tr class="sep" style=""></tr>
@@ -1768,7 +1690,7 @@
 			<td class="egf"> ➤ Mori Mori Meat</h> Pie </td></tr>
 		<tr class="sep" style=""></tr>
 <!-- Fried Buns -->	
-			<tr class="l" style=""><td class="ggf" rowspan="1">Encourage+2</td><td class="ggf" rowspan="1">Encourage+1</td><td class="ggf" rowspan="1">Health+30</td><td class="sgf">Hunger Doubled</td>
+			<tr class="l" style=""><td class="ggf" rowspan="1">Assistance</td><td class="ggf" rowspan="1">Bond</td><td class="ggf" rowspan="1">Health+30</td><td class="sgf">Hunger Doubled</td>
 			<td class="bgf" style=""><h class="gfp">Taiko Olive</h></td>
 			<td class="bgf" style=""><h class="gfb">Bright Grain</h></td>
 			<td class="bgf" style=""><h class="gfb">Bicolour Skimmer</h></td>
@@ -1795,7 +1717,7 @@
 	
 	<tbody>
 	
-	<tr style=""><th colspan="9" class="title">-Caravan Skills-</th></tr>		
+	<tr onclick="parent.toggleTitle(this);" style=""><th colspan="9" class="title">-Caravan Skills-</th></tr>		
 	<tr class="sep" style=""></tr>
 		<tr style=""><td class="c">Skill</td><td class="c">Cost</td><td class="c">Page</td><td class="c">Skill Description</td><td class="c">Points to unlock</td></tr>
 <!-- Recovery Items Up -->
@@ -1996,7 +1918,7 @@
 	
 	<tbody id="skills_road">
 
-		<tr></tr><tr><th colspan="7" class="title">-Hunter's Road Skills-</th></tr>
+	<tr onclick="parent.toggleTitle(this);"><th colspan="7" class="title">-Hunter's Road Skills-</th></tr>
 	
 <!-- Attack -->				
 		<tr class="sep"></tr>
@@ -2138,7 +2060,7 @@
 	
 	<tbody id="skills_feature">
 			
-		<tr></tr><tr><th colspan="7" class="title">-Active Feature-</th></tr>
+		<tr onclick="parent.toggleTitle(this);"><th colspan="7" class="title">-Active Feature-</th></tr>
 		
 		<tr class="sep"></tr>
 		<tr class="l" style=""><td class="gaf">Sword and Shield (SnS)</td><td class="caf"><img src="../assets/SnS.png" class="paf"></td><td style="" class="baf">Status and Elemental attack increased 1.2x. This is internal only and does not change the value on your weapon status.</td></tr>
@@ -2177,7 +2099,7 @@
 	
 	<tbody id="skills_pet">
 	
-	<tr></tr><tr><th colspan="7" class="title">-Pet Skills-</th></tr>	
+	<tr onclick="parent.toggleTitle(this);"><th colspan="7" class="title">-Pet Skills-</th></tr>	
 		
 <!-- Poogie Thrift -->				
 		<tr class="sep"></tr>
@@ -2186,7 +2108,7 @@
 				 <tr><td class="tpo">Guild Rank: 6</td><td class="ipo"><table class="inx"><tbody><tr><td>No material required</td></tr></tbody></table></td></tr>
 <!-- Poogie Discount -->				
 		<tr class="sep"></tr>
-		<tr class="l" style=""><td class="gpo" rowspan="2">Poogie Discount</td><td class="cpo" rowspan="2"><img src="../assets/poogie_ph.png" class="ppo"></td>
+		<tr class="l" style=""><td class="gpo" rowspan="2">Poogie Discount</td><td class="cpo" rowspan="2"><img src="../assets/poogie_2.png" class="ppo"></td>
 					 <td class="tpo"><h class="gop">Naked Emperor</h></td><td style="" class="bpo">Discount of 10% on Furniture stores purchase price (Material & Zenny).</td></tr>
 				 <tr><td class="tpo">Guild Rank: 6</td><td class="ipo"><table class="inx"><tbody><tr><td>Wht Durable Fabric x45</td><td>Appropriate Parts x15</td></tr></tbody></table></td></tr>
 <!-- Poogie Taijutsu -->				

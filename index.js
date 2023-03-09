@@ -113,4 +113,25 @@
 	function menu() {
 		document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 1;
 		document.getElementById('right').src="./tables/default/Default.html";
-	}	
+	}
+	
+	
+	function toggleTitle(title) {
+		if (!title.classList.contains("toggler")){
+			var elem = title.nextElementSibling; var action = false;
+			if (elem.classList.contains("sep")){ elem = elem.nextElementSibling; }
+			while (elem) {
+				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
+				else if(elem.style.display != "none"){ elem.classList.add("toggle"); elem = elem.nextElementSibling; action = true; continue; }
+				else{ elem = elem.nextElementSibling; continue; }
+			}
+			if (action == true){ title.classList.add("toggler"); title.firstElementChild.classList.add("toggled"); }
+		;}
+		else {
+			title.classList.remove("toggler"); title.firstElementChild.classList.remove("toggled");
+			var elem = title.nextElementSibling;
+			while (elem) {
+				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
+				else { elem.classList.remove("toggle"); elem = elem.nextElementSibling; continue; }
+		}}
+	}
