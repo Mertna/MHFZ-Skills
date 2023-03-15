@@ -15,11 +15,13 @@
 				
 			<small style="right: 20px;position: fixed;">(○ = Affected by Goushou Armor buffs)</small>
 			
-			<button class="but" style="width:150px;" onclick="menu()">mhhmmm skils</button> 
+			<button class="but" style="width:150px;" onclick="show('default/Default', false)">mhhmmm skils</button> 
 			
 				<b style="padding:0 10px 0 10px;"> | </b>
 				
 			<input type="text" id="searcher" class="search" placeholder="Skill name..">
+			
+			<button class="searchbut" onclick="searchSkills(document.getElementById('searcher').value);">Search</button> 
 			
 				<b style="padding:0 10px 0 10px;"> | </b>
 				
@@ -32,7 +34,7 @@
 
 		<div class="belly">
 			<iframe id="left" src="./tables/menu/Menu.html"></iframe>
-			<iframe id="right" src="./tables/default/Default.html"></iframe>
+			<iframe id="right" src=""></iframe>
 			<script> onInit(); </script>
 		</div>
 		

@@ -1,10 +1,13 @@
 	let description = true;
+	let menu = true;
 	let search = "";
 	
 	function onInit(){
 		document.getElementById('searcher').onkeydown = function(event){ if (event.keyCode == 13) { searchSkills(document.getElementById('searcher').value); }};
-		if (parseURL('skills') != null) {  setTimeout(() => { direct(parseURL('skills'));}, 500); };
-		if (parseURL('search') != null) {  setTimeout(() => { searchSkills(parseURL('search'));}, 500); };
+		if (parseURL('skills') != null) {  setTimeout(() => { direct(parseURL('skills'));}, 300); }
+		else if (parseURL('search') != null) {  setTimeout(() => { searchSkills(parseURL('search'));}, 300); }
+		else { document.getElementById('right').src = "./tables/default/Default.html"; }
+		menu = false; toggleMenu();
 	};
 	
 	function parseURL(name, url) {
@@ -75,8 +78,10 @@
 	
 	function searchSkills(input) {
 		search = input;
-		document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 2;
-		document.getElementById('left').contentWindow.document.getElementById("petList").selectedIndex = 2;
+		if (document.getElementById('left').src == "./tables/menu/Menu.html"){
+			document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 2;
+			document.getElementById('left').contentWindow.document.getElementById("petList").selectedIndex = 2;
+		}
 		document.getElementById('right').src="./tables/All.html";
 	};
 	
@@ -110,11 +115,19 @@
 		}
 	};
 	
-	function menu() {
-		document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 1;
-		document.getElementById('right').src="./tables/default/Default.html";
+	function toggleMenu() {
+		if (menu == true){
+			menu = false;
+			document.getElementById('left').src = "./tables/menu/Toggle.html";
+			document.getElementById('left').style.width="1%";
+			document.getElementById('right').style.width="98.6%";
+		} else {
+			menu = true;
+			document.getElementById('left').src = "./tables/menu/Menu.html";
+			document.getElementById('left').style.width="10%";
+			document.getElementById('right').style.width="89.6%";
+		}
 	}
-	
 	
 	function toggleTitle(title) {
 		if (!title.classList.contains("toggler")){
