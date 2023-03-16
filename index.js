@@ -7,7 +7,6 @@
 		if (parseURL('skills') != null) {  setTimeout(() => { direct(parseURL('skills'));}, 300); }
 		else if (parseURL('search') != null) {  setTimeout(() => { searchSkills(parseURL('search'));}, 300); }
 		else { document.getElementById('right').src = "./tables/default/Default.html"; }
-		menu = false; toggleMenu();
 	};
 	
 	function parseURL(name, url) {
@@ -118,12 +117,14 @@
 	function toggleMenu() {
 		if (menu == true){
 			menu = false;
-			document.getElementById('left').src = "./tables/menu/Toggle.html";
+			document.getElementById('left').contentWindow.document.getElementById("menu").style.display = "none";
+			document.getElementById('left').contentWindow.document.getElementById("toggle").style.display = "";
 			document.getElementById('left').style.width="1%";
 			document.getElementById('right').style.width="98.6%";
 		} else {
 			menu = true;
-			document.getElementById('left').src = "./tables/menu/Menu.html";
+			document.getElementById('left').contentWindow.document.getElementById("menu").style.display = "";
+			document.getElementById('left').contentWindow.document.getElementById("toggle").style.display = "none";
 			document.getElementById('left').style.width="10%";
 			document.getElementById('right').style.width="89.6%";
 		}

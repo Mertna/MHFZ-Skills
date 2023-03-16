@@ -3,9 +3,14 @@
 
 <link  href="./tables.css" rel="stylesheet">
 
-</head><body>
+<link rel="stylesheet" href="../libs/simplebar/dist/simplebar.min.css">
+<script src="../libs/simplebar/dist/simplebar.js"></script>
 
-<table id="skills_priority" style="width: 100%;" cellspacing="0" cellpadding="1" border="1">
+<style>.simplebar-scrollbar::before{opacity:1; background-color:rgb(100,100,150);}	.simplebar-scrollbar.simplebar-visible:before{opacity:1;}</style>
+
+</head><body class="scroller">
+
+<table id="skills_priority" style="width:100%; padding-right:10px;" cellspacing="0" cellpadding="1" border="1">
 	<tbody>
 		<tr><td colspan="2" rowspan="1" class="intro" style="background-color: rgb(95, 85, 130);">➤ Skills priority :</td><td colspan="14" style="background-color:rgb(95,85,130);">※ Sets do have a limited amount of active skills. If one uses a full G set without Zenith skills, his active skills limit would be 12, and any skills past this limit will be forced to disabled.<br>※ Disabled skills will then be chosen by their priority level, and lower level priority skills will be disabled first. If all 12 active skills are above priority level 130, Wide-Area would be impossible to fit-in.</td> </tr>
 			<tr class="sep" colspan="14"></tr>
@@ -46,4 +51,5 @@
 </table>
 
 </body>
+<script> document.querySelectorAll('.scroller').forEach( e => new SimpleBar(e, { autoHide: false })) </script>
 </html>

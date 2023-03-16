@@ -3,9 +3,14 @@
 
 <link  href="./tables.css" rel="stylesheet">
 
-</head><body>
+<link rel="stylesheet" href="../libs/simplebar/dist/simplebar.min.css">
+<script src="../libs/simplebar/dist/simplebar.js"></script>
 
-<table id="skills_base" style="width: 100%;" cellspacing="0" cellpadding="1" border="1">
+<style>.simplebar-scrollbar::before{opacity:1; background-color:rgb(130,130,200);}	.simplebar-scrollbar.simplebar-visible:before{opacity:1;}</style>
+
+</head><body class="scroller">
+
+<table id="skills_base" style="width:100%; padding-right:10px;" cellspacing="0" cellpadding="1" border="1">
 
 	<colgroup>
 		<col>	<col>	<col>	<col style="width:2em">
@@ -986,4 +991,5 @@
 <script>parent.switchDesc();</script>
 
 </body>
+<script> document.querySelectorAll('.scroller').forEach( e => new SimpleBar(e, { autoHide: false })) </script>
 </html>

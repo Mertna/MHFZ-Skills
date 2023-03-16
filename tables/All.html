@@ -3,9 +3,14 @@
 
 <link  href="./tables.css" rel="stylesheet">
 
-</head><body>
+<link rel="stylesheet" href="../libs/simplebar/dist/simplebar.min.css">
+<script src="../libs/simplebar/dist/simplebar.js"></script>
 
-<table id="skills_all" style="width: 100%;" cellspacing="0" cellpadding="1" border="1">
+<style>.simplebar-scrollbar::before{opacity:1; background-color:rgb(130,130,200);}	.simplebar-scrollbar.simplebar-visible:before{opacity:1;}</style>
+
+</head><body class="scroller">
+
+<table id="skills_all" style="width:100%; padding-right:10px;" cellspacing="0" cellpadding="1" border="1">
 
 	<colgroup>
 		<col>	<col>	<col>	<col style="width:2em">
@@ -1029,7 +1034,7 @@
 	</tbody>
 </table>
 
-<table id="skills_sigils" style="width: 100%; border-top:none;" cellspacing="0" cellpadding="1" border="1">
+<table id="skills_sigils" style="width:100%; padding-right:10px; border-top:none;" cellspacing="0" cellpadding="1" border="1">
 
 	<colgroup>
 		<col>	<col>	<col>	<col style="width:2em">
@@ -1446,7 +1451,7 @@
 	</tbody>
 </table>
 
-<table id="skills_cuisine" style="width: 100%; border-top:none;" cellspacing="0" cellpadding="1" border="1">
+<table id="skills_cuisine" style="width:100%; padding-right:10px; border-top:none;" cellspacing="0" cellpadding="1" border="1">
 
 	<colgroup>
 		<col>	<col>	<col>	<col style="width:2em">
@@ -1709,7 +1714,7 @@
 	</tbody>
 </table>
 
-<table id="skills_caravan" style="width: 100%; border-top:none;" cellspacing="0" cellpadding="1" border="1">
+<table id="skills_caravan" style="width:100%; padding-right:10px; border-top:none;" cellspacing="0" cellpadding="1" border="1">
 
 	<colgroup>
 		<col>	<col>	<col>	<col style="width:2em">
@@ -1910,7 +1915,7 @@
 	</tbody>
 </table>
 
-<table id="skills_road" style="width: 100%; border-top:none;" cellspacing="0" cellpadding="1" border="1">
+<table id="skills_road" style="width:100%; padding-right:10px; border-top:none;" cellspacing="0" cellpadding="1" border="1">
 
 	<colgroup>
 		<col>	<col>	<col>	<col style="width:2em">
@@ -2052,7 +2057,7 @@
 	</tbody>
 </table>
 
-<table id="skills_feature" style="width: 100%; border-top:none;" cellspacing="0" cellpadding="1" border="1">
+<table id="skills_feature" style="width:100%; padding-right:10px; border-top:none;" cellspacing="0" cellpadding="1" border="1">
 
 	<colgroup>
 		<col>	<col>	<col>	<col style="width:2em">
@@ -2091,7 +2096,7 @@
 	</tbody>
 </table>
 
-<table id="skills_pet" style="width: 100%; border-top:none;" cellspacing="0" cellpadding="1" border="1">
+<table id="skills_pet" style="width:100%; padding-right:10px; border-top:none;" cellspacing="0" cellpadding="1" border="1">
 
 	<colgroup>
 		<col>	<col>	<col>	<col style="width:2em">
@@ -2413,4 +2418,5 @@
 </script>
 
 </body>
+<script> document.querySelectorAll('.scroller').forEach( e => new SimpleBar(e, { autoHide: false })) </script>
 </html>
