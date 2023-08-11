@@ -29,6 +29,7 @@
 		else if (table.includes("ROAD")){ table="Road"; guide = false; }
 		else if (table.includes("POOG")){ table="Poogie"; guide = false; }
 		else if (table.includes("HALK")){ table="Halk"; guide = false; }
+		else if (table.includes("RAT")){ table="Rat"; guide = false; }
 		
 		else if (table.includes("POKE")){ table="Lance"; }
 		else if (table.includes("BONK")){ table="Hammer"; }
