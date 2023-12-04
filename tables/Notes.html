@@ -1,0 +1,361 @@
+<html lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+<link  href="./tables.css" rel="stylesheet">
+
+<link rel="stylesheet" href="../libs/simplebar/dist/simplebar.min.css">
+<script src="../libs/simplebar/dist/simplebar.js"></script>
+
+<style>.simplebar-scrollbar::before{opacity:1; background-color:rgb(130,130,200);}	.simplebar-scrollbar.simplebar-visible:before{opacity:1;}</style>
+
+</head><body class="scroller">
+
+<table id="skills_notes" style="width:100%; padding-right:10px;" cellspacing="0" cellpadding="1" border="1">
+
+	<colgroup>
+		<col>	<col>	<col>	<col style="width:2em">
+	</colgroup>
+	
+	<tbody>
+	
+	<tr><td colspan="1" rowspan="1" class="introno" style="background-color: rgb(95, 85, 130); text-align: center;">➤ Hunting Horn Notes :<br>
+		<label for="whitenote"><h class="now" style="font-size: 140%;">♪</h></label><input id="whitenote" type="checkbox" onchange="parent.toggleWNote()" checked/>
+		<label for="pinknote"><h class="nop" style="font-size: 140%;">♪</h></label><input id="pinknote" type="checkbox" onchange="parent.togglePNote()" checked/>
+	</td><td colspan="3" style="background-color:rgb(95,85,130);">※ You can play the <h class="noPp">♪</h> note by holding down select while playing any note. It requires the use of other styles than Earth style.<br>※ For Extreme Style Debuffs, you need your aggression gauge (the little HH icon) to turn red & blinking, get the two appropriated notes, and press select.</td> </tr>
+	
+	<tr class="sep"></tr>
+	<tr style=""><td class="u" colspan="4">All Styles</td></tr>
+	<tr class="sep"></tr>
+	<tr style="" id="startingnotes"><td class="c">Notes</td><td class="c">Activate Song</td><td class="c">Repeat Song</td><td class="c">Duration / Repeat / Max</td></tr>
+
+<!-- W W -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="now">♪</h><h class="now">♪</h></td>
+			<td class="jno">Movement Speed Up</td><td class="nno">Less Bouncing</td><td style="" class="bno">600s / 240s / 600s</td></tr>
+<!-- P P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Movement Speed Up</td><td class="nno">Less Bouncing</td><td style="" class="bno">600s / 240s / 600s</td></tr>
+<!-- W R -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="now">♪</h><h class="nor">♪</h></td>
+			<td class="jno">Attack Up [Small] [ 1.15x / 1.10x ]</td><td class="nno">Attack Up [ 1.2x / 1.15x ]</td><td style="" class="bno">120s / 90s / 120s</td></tr>
+<!-- P R R -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nor">♪</h><h class="nor">♪</h></td>
+			<td class="jno">Attack Up [Large] [ 1.2x / 1.15x ]</td><td class="nno">Attack Up [ 1.3x / 1.2x ]</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- R Y -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nor">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Defense Up [Small] [ 1.15x / +120 ]</td><td class="nno">Defense Up [ 1.2x / +160 ]</td><td style="" class="bno">120s / 90s / 120s</td></tr>
+<!-- R G R -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nor">♪</h><h class="nog">♪</h><h class="nor">♪</h></td>
+			<td class="jno">Defense Up [Large] [ 1.2x / +160 ]</td><td class="nno">Defense Up [ 1.3x / +240 ]</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- R C C P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nor">♪</h><h class="noc">♪</h><h class="noc">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Defense Up [Large] [ 1.2x ]</td><td class="nno">Defense Up [ 1.3x ]</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- W B -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="now">♪</h><h class="nob">♪</h></td>
+			<td class="jno">No Stamina Loss [Small]</td><td class="nno">No Stamina Loss</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- P B B -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nob">♪</h><h class="nob">♪</h></td>
+			<td class="jno">No Stamina Loss [Large]</td><td class="nno">No Stamina Loss</td><td style="" class="bno">150s / 60s / 150s</td></tr>
+<!-- Y B Y W -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="noy">♪</h><h class="nob">♪</h><h class="noy">♪</h><h class="now">♪</h></td>
+			<td class="jno">Elemental Attack Up [ 1.1x ]</td><td class="nno">-</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- P B P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nob">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Status Attack Up [ 1.125x ]</td><td class="nno">-</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- P G P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nog">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Stun Up [ 1.1x ]</td><td class="nno">-</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- P Y P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="noy">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Sharp Sword</td><td class="nno">-</td><td style="" class="bno">60s / 30s / 60s</td></tr>
+<!-- G Y P Y -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nog">♪</h><h class="noy">♪</h><h class="nop">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Divine Protection</td><td class="nno">-</td><td style="" class="bno">60s / 30s / 90s</td></tr>
+<!-- R B W -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="nor">♪</h><h class="nob">♪</h><h class="now">♪</h></td>
+			<td class="jno">Health Increase [Small] [ +20 ]</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 180s</td></tr>
+<!-- R R C -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nor">♪</h><h class="nor">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Health Increase [Medium] [ +30 ]</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 180s</td></tr>
+<!-- R B R P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nor">♪</h><h class="nob">♪</h><h class="nor">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Health Increase [Large] [ +50 ]</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 180s</td></tr>
+<!-- P G -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nog">♪</h></td>
+			<td class="jno">Health Recovery [ Small / Tiny ]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- G P Y -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nog">♪</h><h class="nop">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Health Recovery [ Medium / Tiny ]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- G G P C -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nog">♪</h><h class="nog">♪</h><h class="nop">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Health Recovery [ Large / Small ]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- W G -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="nog">♪</h><h class="nop">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Health Recovery & Antidote [ Small / Tiny ]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- G B P B -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nog">♪</h><h class="nob">♪</h><h class="nop">♪</h><h class="nob">♪</h></td>
+			<td class="jno">Health Recovery & Antidote [ Medium / Tiny ]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- G W C -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="nog">♪</h><h class="now">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Health Recovery & Deodorant [ Medium / Tiny ]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- G G Y -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nog">♪</h><h class="nog">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Recovery Speed [Small]</td><td class="nno">-</td><td style="" class="bno">120s / 60s / 180s</td></tr>
+<!-- G R G P -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nog">♪</h><h class="nor">♪</h><h class="nog">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Recovery Speed [Large]</td><td class="nno">-</td><td style="" class="bno">120s / 60s / 180s</td></tr>
+<!-- C B W -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="nog">♪</h><h class="now">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Sharpness Recovery [Small]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- C G G -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noc">♪</h><h class="nog">♪</h><h class="nog">♪</h></td>
+			<td class="jno">Sharpness Recovery [Small]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- C P B C -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noc">♪</h><h class="nop">♪</h><h class="nob">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Sharpness Recovery [Large]</td><td class="nno">-</td><td style="" class="bno">Instant</td></tr>
+<!-- B B R -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nob">♪</h><h class="nob">♪</h><h class="nor">♪</h></td>
+			<td class="jno">Wind Pressure [Small]</td><td class="nno">Wind Pressure [Large]</td><td style="" class="bno">180s / 120s / 180s</td></tr>
+<!-- B B G -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nob">♪</h><h class="nob">♪</h><h class="nog">♪</h></td>
+			<td class="jno">Wind Pressure [Large]</td><td class="nno">Wind Pressure Immunity</td><td style="" class="bno">180s / 120s / 180s</td></tr>
+<!-- B C B -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nob">♪</h><h class="noc">♪</h><h class="nob">♪</h></td>
+			<td class="jno">Wind Pressure [Large]</td><td class="nno">Wind Pressure Immunity</td><td style="" class="bno">180s / 120s / 180s</td></tr>
+<!-- B B Y P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nob">♪</h><h class="nob">♪</h><h class="noy">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Wind Pressure Immunity</td><td class="nno">-</td><td style="" class="bno">180s / 180s / 180s</td></tr>
+<!-- C C R -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noc">♪</h><h class="noc">♪</h><h class="nor">♪</h></td>
+			<td class="jno">Hearing Protection [Small]</td><td class="nno">Hearing Protection [Large]</td><td style="" class="bno">180s / 120s / 180s</td></tr>
+<!-- C C G P -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noc">♪</h><h class="noc">♪</h><h class="nog">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Hearing Protection [Large]</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 180s</td></tr>
+<!-- C C Y -->
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noc">♪</h><h class="noc">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Cold Immunity</td><td class="nno">-</td><td style="" class="bno">240s / 240s / 480s</td></tr>
+<!-- C G C -->
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noc">♪</h><h class="nog">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Heat Immunity</td><td class="nno">-</td><td style="" class="bno">240s / 240s / 480s</td></tr>
+<!-- C B P -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noc">♪</h><h class="nob">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Stun Immunity</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 300s</td></tr>
+<!-- C Y Y -->
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noc">♪</h><h class="noy">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Paralysis Immunity</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 300s</td></tr>
+<!-- C Y C -->
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noc">♪</h><h class="noy">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Quake Immunity</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 300s</td></tr>
+<!-- B B C -->
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nob">♪</h><h class="nob">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Clairvoyance</td><td class="nno">-</td><td style="" class="bno">30s / 30s / 30s</td></tr>
+<!-- B P Y B -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nob">♪</h><h class="nop">♪</h><h class="noy">♪</h><h class="nob">♪</h></td>
+			<td class="jno">Flinch Immunity</td><td class="nno">-</td><td style="" class="bno">60s / 60s / 90s</td></tr>
+<!-- B G B P -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nob">♪</h><h class="nog">♪</h><h class="nob">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Flinch Immunity</td><td class="nno">-</td><td style="" class="bno">60s / 60s / 90s</td></tr>
+<!-- Y R -->
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noy">♪</h><h class="nor">♪</h></td>
+			<td class="jno">Fire Resistance [Small] [ +10 ]</td><td class="nno">Fire Resistance [ +15 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y B W -->
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="noy">♪</h><h class="nob">♪</h><h class="now">♪</h></td>
+			<td class="jno">Fire Resistance [Large] [ +15 ]</td><td class="nno">Fire Resistance [ +20 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- P Y B -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="noy">♪</h><h class="nob">♪</h></td>
+			<td class="jno">Fire Resistance [Large] [ +15 ]</td><td class="nno">Fire Resistance [ +20 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y B P -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noy">♪</h><h class="nob">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Water Resistance [Small] [ +10 ]</td><td class="nno">Water Resistance [ +15 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y B B W -->
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="noy">♪</h><h class="nob">♪</h><h class="nob">♪</h><h class="now">♪</h></td>
+			<td class="jno">Water Resistance [Large] [ +15 ]</td><td class="nno">Water Resistance [ +20 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y B B P -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noy">♪</h><h class="nob">♪</h><h class="nob">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Water Resistance [Large] [ +15 ]</td><td class="nno">Water Resistance [ +20 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y C P -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noy">♪</h><h class="noc">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Thunder Resistance [Small] [ +10 ]</td><td class="nno">Thunder Resistance [ +15 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y Y B -->
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noy">♪</h><h class="noy">♪</h><h class="nob">♪</h></td>
+			<td class="jno">Thunder Resistance [Large] [ +15 ]</td><td class="nno">Thunder Resistance [ +20 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y W C -->
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="noy">♪</h><h class="now">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Ice Resistance [Small] [ +10 ]</td><td class="nno">Ice Resistance [ +15 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y G W -->
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="noy">♪</h><h class="nog">♪</h><h class="now">♪</h></td>
+			<td class="jno">Ice Resistance [Small] [ +10 ]</td><td class="nno">Ice Resistance [ +15 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y P C -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noy">♪</h><h class="nop">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Ice Resistance [Large] [ +15 ]</td><td class="nno">Ice Resistance [ +20 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- Y G P -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noy">♪</h><h class="nog">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Ice Resistance [Large] [ +15 ]</td><td class="nno">Ice Resistance [ +20 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- W Y -->
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="now">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Dragon Resistance [Small] [ +10 ]</td><td class="nno">Dragon Resistance [ +15 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- P Y Y -->
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="noy">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Dragon Resistance [Large] [ +15 ]</td><td class="nno">Dragon Resistance [ +20 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+
+	<tr class="sep"></tr>
+	<tr style=""><td class="u" colspan="4">Storm & Extreme Style</td></tr>
+
+<!-- P R PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nor">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Attack Up [Large] [ 1.2x / 1.15x ]</td><td class="nno">Attack Up [ 1.3x / 1.2x ]</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- P G PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nog">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Attack Up [Large] [ 1.2x / 1.15x ]</td><td class="nno">Attack Up [ 1.3x / 1.2x ]</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- P C PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="noc">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Attack Up [Large] [ 1.2x / 1.15x ]</td><td class="nno">Attack Up [ 1.3x / 1.2x ]</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- P B PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nob">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Attack Up [Large] [ 1.2x / 1.15x ]</td><td class="nno">Attack Up [ 1.3x / 1.2x ]</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- P Y PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="noy">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Attack Up [Large] [ 1.2x / 1.15x ]</td><td class="nno">Attack Up [ 1.3x / 1.2x ]</td><td style="" class="bno">90s / 60s / 90s</td></tr>
+<!-- C PP W -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="noc">♪</h><h class="nopp">♪</h><h class="now">♪</h></td>
+			<td class="jno">Defense Up [Small] [ 1.15x ]</td><td class="nno">Defense Up [ 1.2x ]</td><td style="" class="bno">120s / 90s / 120s</td></tr>
+<!-- C PP P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noc">♪</h><h class="nopp">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Elemental Attack Up [ 1.1x ]</td><td class="nno">-</td><td style="" class="bno">90s / 60s / 150s</td></tr>
+<!-- W PP G -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="now">♪</h><h class="nopp">♪</h><h class="nog">♪</h></td>
+			<td class="jno">Cold Immunity</td><td class="nno">-</td><td style="" class="bno">240s / 240s / 480s</td></tr>
+<!-- B W PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="nob">♪</h><h class="now">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Heat Immunity</td><td class="nno">-</td><td style="" class="bno">240s / 240s / 480s</td></tr>
+<!-- Y PP W -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="noy">♪</h><h class="nopp">♪</h><h class="now">♪</h></td>
+			<td class="jno">Stun Immunity</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 300s</td></tr>
+<!-- Y PP P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="noy">♪</h><h class="nopp">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Stun Immunity</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 300s</td></tr>
+<!-- R P PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nor">♪</h><h class="nop">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Paralysis Immunity</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 300s</td></tr>
+<!-- R PP W -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l nw" style=""><td class="gno"><h class="nor">♪</h><h class="nopp">♪</h><h class="now">♪</h></td>
+			<td class="jno">Quake Immunity</td><td class="nno">-</td><td style="" class="bno">180s / 120s / 300s</td></tr>
+<!-- P PP G -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nopp">♪</h><h class="nog">♪</h></td>
+			<td class="jno">Fire Resistance [Small] [ +10 ]</td><td class="nno">Fire Resistance [ +15 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+<!-- B P PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nob">♪</h><h class="nop">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Ice Resistance [Small] [ +10 ]</td><td class="nno">Ice Resistance [ +15 ]</td><td style="" class="bno">60s / 60s / 60s</td></tr>
+	
+	<tr class="sep"></tr>
+	<tr style=""><td class="u" colspan="4">Extreme Style Debuffs</td></tr>
+
+<!-- PP PP -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nopp">♪</h><h class="nopp">♪</h></td>
+			<td class="jno">Monster Cannot Flee</td><td class="nno">-</td><td style="" class="bno">300s / 300s / 300s</td></tr>
+<!-- P P -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l np" style=""><td class="gno"><h class="nop">♪</h><h class="nop">♪</h></td>
+			<td class="jno">Raw Hitzone Values Debuff [ +2 ]</td><td class="nno">-</td><td style="" class="bno">90s / 90s / 90s</td></tr>
+<!-- R R -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nor">♪</h><h class="nor">♪</h></td>
+			<td class="jno">Fire Elemental Hitzone Values Debuff [ +4 ]</td><td class="nno">-</td><td style="" class="bno">90s / 90s / 90s</td></tr>
+<!-- B B -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nob">♪</h><h class="nob">♪</h></td>
+			<td class="jno">Water Elemental Hitzone Values Debuff [ +4 ]</td><td class="nno">-</td><td style="" class="bno">90s / 90s / 90s</td></tr>
+<!-- Y Y -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noy">♪</h><h class="noy">♪</h></td>
+			<td class="jno">Thunder Elemental Hitzone Values Debuff [ +4 ]</td><td class="nno">-</td><td style="" class="bno">90s / 90s / 90s</td></tr>
+<!-- C C -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="noc">♪</h><h class="noc">♪</h></td>
+			<td class="jno">Ice Elemental Hitzone Values Debuff [ +4 ]</td><td class="nno">-</td><td style="" class="bno">90s / 90s / 90s</td></tr>
+<!-- G G -->				
+		<tr class="sep" style=""></tr>
+		<tr class="l" style=""><td class="gno"><h class="nog">♪</h><h class="nog">♪</h></td>
+			<td class="jno">Dragon Elemental Hitzone Values Debuff [ +4 ]</td><td class="nno">-</td><td style="" class="bno">90s / 90s / 90s</td></tr>
+
+
+	</tbody>
+</table>
+
+<script> parent.switchDesc(); </script>
+<script> document.querySelectorAll('.toggling').forEach( e => parent.toggleTitle(e)) </script>
+
+</body>
+<script> document.querySelectorAll('.scroller').forEach( e => new SimpleBar(e, { autoHide: false })) </script>
+</html>
