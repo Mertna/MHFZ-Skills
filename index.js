@@ -22,6 +22,7 @@
 	function direct(table){
 		table = table.toUpperCase();  let guide = true;
 			 if (table.includes("PRIO")){ table="Priority"; guide = false; }
+		else if (table.includes("NOTE")){ table="Notes"; guide = false; }
 		else if (table.includes("SIGIL")){ table="Sigil"; guide = false; }
 		else if (table.includes("CUIS") || table.includes("GUILD")){ table="Cuisine"; guide = false; }
 		else if (table.includes("CARAV")){ table="Caravan"; guide = false; }
@@ -148,5 +149,43 @@
 			while (elem) {
 				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
 				else { elem.classList.remove("toggle"); elem = elem.nextElementSibling; continue; }
+		}}
+	}
+
+	function toggleWNote() {
+		var elem = document.getElementById('right').contentWindow.document.getElementById("startingnotes");
+		if (document.getElementById('right').contentWindow.document.getElementById("whitenote").checked == false) {
+			elem = elem.nextElementSibling;
+			while (elem) {
+				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
+				else if(elem.classList.contains("nw")){ elem.classList.add("toggle"); elem = elem.nextElementSibling; elem.classList.add("toggle"); elem = elem.nextElementSibling; continue; }
+				else{ elem = elem.nextElementSibling; continue; }
+			}
+		}
+		else {
+			elem = elem.nextElementSibling;
+			while (elem) {
+				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
+				else if(elem.classList.contains("nw")) { elem.classList.remove("toggle"); elem = elem.nextElementSibling; elem.classList.remove("toggle"); elem = elem.nextElementSibling; continue; }
+				else{ elem = elem.nextElementSibling; continue; }
+		}}
+	}
+
+	function togglePNote() {
+		var elem = document.getElementById('right').contentWindow.document.getElementById("startingnotes");
+		if (document.getElementById('right').contentWindow.document.getElementById("pinknote").checked == false) {
+			elem = elem.nextElementSibling;
+			while (elem) {
+				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
+				else if(elem.classList.contains("np")){ elem.classList.add("toggle"); elem = elem.nextElementSibling; elem.classList.add("toggle"); elem = elem.nextElementSibling; continue; }
+				else{ elem = elem.nextElementSibling; continue; }
+			}
+		}
+		else {
+			elem = elem.nextElementSibling;
+			while (elem) {
+				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
+				else if(elem.classList.contains("np")) { elem.classList.remove("toggle"); elem = elem.nextElementSibling; elem.classList.remove("toggle"); elem = elem.nextElementSibling; continue; }
+				else{ elem = elem.nextElementSibling; continue; }
 		}}
 	}
