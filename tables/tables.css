@@ -1,5 +1,5 @@
 	.title	{font-size:120%; color:white; border:1px solid; cursor:pointer;}
-	.toggler{font-weight:normal;} .toggled{background-color:rgb(79, 79, 138);} .toggle {display:none;}
+	.toggler{font-weight:normal;} .toggled{background-color:rgb(79, 79, 138);} .toggle {display:none;} .toggling {font-weight:normal;}
 	.link  {color:cyan; cursor:pointer;}
 	
 	 body	{height:100%; width:100%; margin:0; padding:0; background-color:rgba(0,0,0,0); overflow:auto; color:white;}
@@ -10,6 +10,7 @@
 	 th		{font-weight:normal; background-color:rgb(120,120,210); font-weight:normal; font-size:100%;}
 	 td		{background-color:rgb(90,90,110); padding-left:5px; border-color:rgb(150,150,180); font-weight:normal; font-size:100%; width:max-content; height:100%;}
 	 td.c	{background-color:rgb(133, 136, 187); padding:0 5px 0 5px; text-decoration:underline; padding: 0 5px 0 5px; color:white; text-align:center;}
+	 td.u	{background-color:rgb(86, 82, 133); padding:0 5px 0 5px; padding: 0 5px 0 5px; color:white; text-align:center;}
 	 td.b	{background-color:rgba(90, 90, 110, 0.95);}
 	 td.i	{background-color:rgba(90, 90, 110, 0.50); width:12%;}
 	 td.g	{background-color:rgb(80,90,130); padding: 0 5px 0 5px;}
@@ -41,6 +42,21 @@
 	.gfb {color:#00c8ff;}
 	.gfp {color:#ec80ff;}
 	.gfo {text-decoration:line-through;}
+
+	td.gno {background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:12%; text-align:center; font-size: 140%;}
+	td.jno {background-color:rgba(85,85,115,0.95); padding: 0 5px 0 5px; width:34%; text-align:center;}
+	td.nno	{background-color:rgb(88,88,110,0.95); height:10%; width:34%; text-align:center;}
+	td.bno	{background-color:rgba(90, 90, 110); height:10%; width:20%; text-align:center;}
+	.nw{} .np{}
+	.now {color:#ffffff;}
+	.nob {color:#2434c4;}
+	.nor {color:#ff3131;}
+	.noy {color:#ffee00;}
+	.nog {color:#3dff51;}
+	.noc {color:#00f7ff;}
+	.nop {color:#ff43ff; }
+	.nopp {color:#e788f8; text-decoration:overline underline;}
+	input{margin: 10px 0 10px 0; width:20%; }
 
 	 td.gca {background-color:rgb(80,90,130); padding: 0 5px 0 5px; width:15%;}
 	 td.jca {background-color:rgb(136, 119, 159);padding: 0 5px 0 5px; width:15%;}
@@ -84,7 +100,7 @@
 	.inx th	{background-color:rgba(120,120,150,0.95);}
 	.inx td {background-color: rgba(90,90,110,0.95); padding-left:5px; padding-right: 5px;}
 	
-	.intro  {width:10%;} .introsi {width:15%;}
+	.intro  {width:10%;} .introsi {width:15%;} .introno {width:12%;}
 	.intro2 {width:10%;} .intro2 img {margin-right:auto; margin-left:20%; height:50%; padding: 10 0 10 0;}
 	.sep 	{height:10px;}  .sep td  {visibility:hidden;}	.sepTitle{height:10px;}
 	
