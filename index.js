@@ -152,13 +152,13 @@
 		}}
 	}
 
-	function toggleWNote() {
+	function toggleNote(color, checker) {
 		var elem = document.getElementById('right').contentWindow.document.getElementById("startingnotes");
-		if (document.getElementById('right').contentWindow.document.getElementById("whitenote").checked == false) {
+		if (checker.checked == false) {
 			elem = elem.nextElementSibling;
 			while (elem) {
 				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
-				else if(elem.classList.contains("nw")){ elem.classList.add("toggle"); elem = elem.nextElementSibling; elem.classList.add("toggle"); elem = elem.nextElementSibling; continue; }
+				else if(elem.classList.contains(color)){ elem.classList.add("toggle"); elem = elem.nextElementSibling; if (elem != null) {elem.classList.add("toggle"); elem = elem.nextElementSibling; continue; } else break; }
 				else{ elem = elem.nextElementSibling; continue; }
 			}
 		}
@@ -166,26 +166,18 @@
 			elem = elem.nextElementSibling;
 			while (elem) {
 				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
-				else if(elem.classList.contains("nw")) { elem.classList.remove("toggle"); elem = elem.nextElementSibling; elem.classList.remove("toggle"); elem = elem.nextElementSibling; continue; }
+				else if(elem.classList.contains(color)) { elem.classList.remove("toggle"); elem = elem.nextElementSibling; if (elem != null) { elem.classList.remove("toggle"); elem = elem.nextElementSibling; continue; } else break; }
 				else{ elem = elem.nextElementSibling; continue; }
-		}}
-	}
-
-	function togglePNote() {
-		var elem = document.getElementById('right').contentWindow.document.getElementById("startingnotes");
-		if (document.getElementById('right').contentWindow.document.getElementById("pinknote").checked == false) {
-			elem = elem.nextElementSibling;
-			while (elem) {
-				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
-				else if(elem.classList.contains("np")){ elem.classList.add("toggle"); elem = elem.nextElementSibling; elem.classList.add("toggle"); elem = elem.nextElementSibling; continue; }
-				else{ elem = elem.nextElementSibling; continue; }
-			}
 		}
-		else {
-			elem = elem.nextElementSibling;
-			while (elem) {
-				if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
-				else if(elem.classList.contains("np")) { elem.classList.remove("toggle"); elem = elem.nextElementSibling; elem.classList.remove("toggle"); elem = elem.nextElementSibling; continue; }
-				else{ elem = elem.nextElementSibling; continue; }
+			document.getElementById('right').contentWindow.document.querySelectorAll("input").forEach((i) => { 
+			if(i.checked == false) { 
+				elem = document.getElementById('right').contentWindow.document.getElementById("startingnotes"); elem = elem.nextElementSibling;
+				while (elem) {
+					if (elem.firstElementChild != null && elem.firstElementChild.classList.contains("title")) { break; }
+					else if(elem.classList.contains(i.id)){ elem.classList.add("toggle"); elem = elem.nextElementSibling; if (elem != null) {elem.classList.add("toggle"); elem = elem.nextElementSibling; continue; } else break; }
+					else{ elem = elem.nextElementSibling; continue; }
+				}
+				}
+			})
 		}}
-	}
+	
