@@ -47,7 +47,7 @@
 				case "LANCE": 	table = "Lance"; break;
 				case "GL": case "GUNLANCE": table = "GL"; break;
 				case "TONFA": case "TONFAS": case "TONF": table = "Tonfa"; break;
-				case "SWA": case "SA": case "SWITCHAXE": case "SWAXE": case "SWAGAXE": table = "SwA"; break;
+				case "SAF": case "SA": case "SAF": case "SWITCHAXE": case "SWAXE": case "SWAGAXE": table = "SAF"; break;
 				case "MS": 		table = "MS"; break;
 				case "LBG": 	table = "LBG"; break;
 				case "HBG": 	table = "HBG"; break;
