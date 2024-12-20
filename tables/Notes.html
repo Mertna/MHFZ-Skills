@@ -358,7 +358,22 @@
 	</tbody>
 </table>
 
-<script> parent.switchDesc(); </script>
+<script>	
+	let search = parent.getSearch();
+	if(search != null && search != ""){
+		input = search.toUpperCase();
+		if (input != null && input != ""){
+			document.querySelectorAll("input").forEach((note) => {
+				var boxName = note.id; 
+				var color = boxName.substring(1).toUpperCase();
+				if (search.includes(color) == false){
+					note.checked = false; 
+					parent.toggleNote(boxName, this);
+				}
+			});
+		}
+	} parent.switchDesc();
+</script>
 <script> document.querySelectorAll('.toggling').forEach( e => parent.toggleTitle(e)) </script>
 
 </body>
