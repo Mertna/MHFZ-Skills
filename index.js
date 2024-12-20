@@ -6,6 +6,8 @@
 		document.getElementById('searcher').onkeydown = function(event){ if (event.keyCode == 13) { searchSkills(document.getElementById('searcher').value); }};
 		if (parseURL('skills') != null) {  setTimeout(() => { direct(parseURL('skills'));}, 300); }
 		else if (parseURL('search') != null) {  setTimeout(() => { searchSkills(parseURL('search'));}, 300); }
+		else if (parseURL('note') != null) {  setTimeout(() => { searchNotes(parseURL('note'));}, 300); }
+		else if (parseURL('notes') != null) {  setTimeout(() => { searchNotes(parseURL('notes'));}, 300); }
 		else { document.getElementById('right').src = "./tables/default/Default.html"; }
 	};
 	
@@ -84,6 +86,15 @@
 			document.getElementById('left').contentWindow.document.getElementById("petList").selectedIndex = 2;
 		}
 		document.getElementById('right').src="./tables/All.html";
+	};
+
+	function searchNotes(input) {
+		search = input.toUpperCase();
+		if (document.getElementById('left').src == "./tables/menu/Menu.html"){
+			document.getElementById('left').contentWindow.document.getElementById("classList").selectedIndex = 2;
+			document.getElementById('left').contentWindow.document.getElementById("petList").selectedIndex = 2;
+		}
+		document.getElementById('right').src="./tables/Notes.html";
 	};
 	
 	function getSearch() { return search; };
