@@ -2405,13 +2405,27 @@
 			let seps = document.querySelectorAll(".sep");
 			seps.forEach((s) => {
 				try{
-					if (s.nextElementSibling.firstElementChild.innerText.toUpperCase().includes(input) == false ){
+					/*if (s.nextElementSibling.firstElementChild.innerText.toUpperCase().includes(input) == false ){
 					var elem = s.nextElementSibling;
 					while (elem) {
 						if (elem.classList.contains('sep')) { elem.style.display = "none"; break; }
 						else if (elem.firstElementChild.classList.contains('title')) { break; }
 						else { elem.style.display = "none"; elem = elem.nextElementSibling; continue; }
-					}}; 
+					}}; */
+					if (s.nextElementSibling.firstElementChild.innerText.toUpperCase().includes(input) == false && s.nextElementSibling.children[2].innerText.toUpperCase().includes(input) == false){
+						var elem = s.nextElementSibling;
+						while (elem) {
+							if (elem.classList.contains('sep')) { elem.style.display = "none"; break; }
+							else if (elem.firstElementChild.classList.contains('title')) { break; }
+							else { elem.style.display = "none"; elem = elem.nextElementSibling; continue; }
+					}};
+					if (s.nextElementSibling.children[2].innerText.toUpperCase().includes(input) == true && s.nextElementSibling.children[2].innerText.toUpperCase().includes("THE HALK") == true){
+						var elem = s.nextElementSibling;
+						while (elem) {
+							if (elem.classList.contains('sep')) { elem.style.display = "none"; break; }
+							else if (elem.firstElementChild.classList.contains('title')) { break; }
+							else { elem.style.display = "none"; elem = elem.nextElementSibling; continue; }
+					}};
 				} catch{};
 		});}
 	} parent.switchDesc();
